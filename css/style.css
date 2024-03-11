@@ -1,8 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
 *{
-    margin: 0;
+  
     padding: 0;
     box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+:root {
+    --black: #000000;
+    --skyblue: #00bfff;
+    --width: #ffffff;
+    --red: #ff0000;
+    --blue: #0000ff;
+    --deepskyblue: #00bfff;
+    --ForestGreen: #228B22;
+    --Gray: #808080;
 }
 
 .red {
@@ -32,7 +47,6 @@
 }
 
 .nav-item {
-    list-style-type: none;
     text-transform: uppercase;
     color: black;
 }
@@ -47,7 +61,7 @@ hr {
 }
 
 .nav-item:hover {
-    color: brown;
+    color: deepskyblue;
     transition: 0.2s;
 
 }
@@ -71,9 +85,47 @@ hr {
 }
 
 .about-image {
-    float: left;
+    float: left; /**/
     margin: 0 20px 10px 0;
     width: 200px;
     height: auto;
+}
+
+.about-description {
+    color: var(--Gray);
+    text-align: justify;
+}
+
+.main-footer {
+    background-color: var(--skyblue);
+    padding: 15px 0;
+}
+
+.main-footer-container {
+    display: flex;/*deixar todo na mesma linha*/
+    align-items: center;/*alinha dodos os elementos*/
+    justify-content: space-between;/*colar nome de um lado e lista de icones do outro*/
+}
+
+.title-smaller {
+    font-family: "Raleway, sans-serif";
+    color: var(--blue);
+    font-size: 26px;
+}
+
+.list-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-Item {
+    width: 50px;
+    height: 50px;
+    padding: 15px 0;
+}
+
+.footer-Item , .footer-Item {
+    margin-left: 16px;
 }
 
