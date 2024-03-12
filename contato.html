@@ -7,94 +7,115 @@
     <meta name="description" content="Programador Front-End, Senai.">
     <meta name="keywords" content="HTML, CSS, JavaScript, Senai">
     <meta name="author" content="Natanael"> 
+
+
+    <!--links-->
+    <link rel="shortcut icon" href="images/35594.svg" type="images/svg">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
+   <!--area do site-->
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><!--Logotipo do Site-->
-                    <a href="index.html">
-                    <img src="images/logo.png" alt="logo" height="100" width="100">
-                    </a>
-                    </li>
-                    <li>
-                        <a href="loja.html">Loja</a>
-                    </li>
-                
-                    <li>
-                        <a href="contato.html">Contato</a>
-                    </li>
-                
-                    <li>
-                        <a href="Sobre.html">Sobre</a>
-            </ul>
+     <!--Cabecalho-->
+    <header class="main-header">
+
+        <!--Navegação-->
+        <nav class="main-nav container">
+    
+        <!--Lista não ondenada-->
+        <ul class="header-list-container">
+    
+        <!--Intem na Lista-->
+        <li class="nav-item"><!--Logotipo do Site-->
+        <a href="index.html">
+        <img src="images/logo.png" alt="logo" height="100" width="100">
+        </a>
+        </li>
+        <li class="nav-item">
+            <a href="loja.html">Loja</a>
+        </li>
+    
+        <li class="nav-item">
+            <a href="contato.html">Contato</a>
+        </li>
+    
+        <li class="nav-item">
+            <a href="Sobre.html">Sobre</a>
+        </ul>
         </nav>
-    </header>
+        <hr>
+    
+        </header>
     <main>
 
-        <form>
-        <h2>contato</h2>
-        <p>Os campos com * são preenchimento obrigatório</p>
+        <h2 class="title-median">contato</h2>
+        <p class="contact-text">Os campos com * são preenchimento obrigatório</p>
         <!--campo do formulário-->
-        <label>
+        <form class="contact">
+
+        <label class="contact-label">
             Nome*
-            <input type="text" required>
+            <input class="contact-field" type="text" required>
         </label>
 
-        <label>
+        <label class="contact-label">
             E-mail*
-            <input type="text" required>
+            <input class="contact-field" type="text" required>
         </label>
 
-        <label>
+        <label class="contact-label">
             Assunto*
-            <select>
+            <select class="contact-field">
+                <option>Newsleffer</option>
                 <option>Dúvidas</option>
                 <option>Sugestões</option>
                 <option>Criticas</option>
             </select>
         </label>
 
-        <label>
+        <label class="contact-label">
             Mensagem*
-            <textarea required></textarea>
+            <textarea class="contact-field" required></textarea>
         </label>
 
-        <button type="button">Enviar</button>
+        <button class="button-form" type="button">Enviar</button>
 
         </form>
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7969.379274141521!2d-41.77705649832405!3d-2.9054308435886633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1709730390325!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="contact-maps">
+        <iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7969.379274141521!2d-41.77705649832405!3d-2.9054308435886633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1709730390325!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </main>
      <!--Rodape do site-->
-     <footer>
+<footer class="main-footer">
 
-        <div>
-            <h3>Vendas Livres Store - Natanael 2024</h3>
-            <ul>
-            <li>
-                <a href="https://www.facebook.com/" target="_blank">
-                    <img src="images/facebook.svg" alt="facebook logo">
-            </a>
-            </li>
+    <div class="footer-container">
+        
+    <h3 class="title-smaller">Vendas Livres Store - Natanael 2024</h3>
+    <ul class="footer-container">
+    <li class="footer-Item">
+        <a href="https://www.facebook.com/" target="_blank">
+            <img src="images/facebook.svg" alt="facebook logo">
+    </a>
+    </li>
 
-            <li>
-            <a href="https://www.Instagram.com/" target="_blank">
-                <img src="images/instagram.svg" alt="Instagram logo">
-            </a>
-            </li>
+    <li class="footer-Item">
+    <a href="https://www.Instagram.com/" target="_blank">
+        <img src="images/instagram.svg" alt="Instagram logo">
+    </a>
+    </li>
 
-            <li>
-                <a href="https://www.spotify.com/" target="_blank">
-                    <img src="images/spotify.svg" alt="spotify logo">
-            </a>
-            </li>
+    <li class="footer-Item">
+        <a href="https://www.spotify.com/" target="_blank">
+            <img src="images/spotify.svg" alt="spotify logo">
+    </a>
+    </li>
 
-            <li>
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img src="images/youtube.svg" alt="youtube logo">
-            </a>
-            </li>
+    <li class="footer-Item">
+        <a href="https://www.youtube.com/" target="_blank">
+            <img src="images/youtube.svg" alt="youtube logo">
+    </a>
+    </li>
             </ul>
 
         </div>

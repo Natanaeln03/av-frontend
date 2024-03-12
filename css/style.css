@@ -1,13 +1,24 @@
+/*Importa forte do google fonts*/
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
+
+/*Reset em todos os elementos*/
+
 *{
-  
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-li {
-    list-style-type: none;
+body {
+    font: 400 22px "Roboto", sans-serif;
 }
+
+li {
+    list-style-type: none; /*retira as bolinhas dos elementos*/
+}
+
+/*Criação de variaveis no root do css*/
 
 :root {
     --black: #000000;
@@ -20,34 +31,30 @@ li {
     --Gray: #808080;
 }
 
-.red {
-    color: red;
-    font-family: "rock salt", cursive;
-}
 
 /*header*/
 
 .main-header {
-    background-image: url(background-image.png);
-    background-position: 50% 39%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-image: url(background-image.png); /*Adiciona imagem no fundo*/
+    background-position: 50% 39%; /*Alinha os elementos nos eixos x e y*/
+    display: flex; /*colocar elementos centralizados*/
+    flex-direction: column; /*alinha os elementos um embaixo do outro*/
+    align-items: center; /*centralizar os elementos*/
 }
 
 .main-nav {
-    width: 100%;
+    width: 100%; /*Ocupar toda area disponivel*/
 }
 
 .header-list-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 0;
+    display: flex; /*colocar os elementos na mesma linha*/
+    justify-content: space-between; /*adiciona espaçamento entre os itens*/
+    align-items: center; /*garatir que fiquem alinhados na mesma linha*/
+    padding: 16px 0; /*primeiro é cima e baixo, segundo esquerda e direita*/
 }
 
 .nav-item {
-    text-transform: uppercase;
+    text-transform: uppercase; /*deixar todas */
     color: black;
 }
 
@@ -76,7 +83,7 @@ hr {
     margin: 0 auto;
 }
 
-.about-title {
+.title-median {
     font-family: "Roboto", sans-serif;
     font-size: 32px;
     text-align: center;
@@ -92,7 +99,7 @@ hr {
 }
 
 .about-description {
-    color: var(--Gray);
+    color: var(--black);
     text-align: justify;
 }
 
@@ -101,22 +108,16 @@ hr {
     padding: 15px 0;
 }
 
-.main-footer-container {
-    display: flex;/*deixar todo na mesma linha*/
-    align-items: center;/*alinha dodos os elementos*/
-    justify-content: space-between;/*colar nome de um lado e lista de icones do outro*/
+.footer-container {
+    display: flex; /*deixar todo na mesma linha*/
+    align-items: center; /*alinha dodos os elementos*/
+    justify-content: space-between; /*colar nome de um lado e lista de icones do outro*/
 }
 
 .title-smaller {
     font-family: "Raleway, sans-serif";
     color: var(--blue);
     font-size: 26px;
-}
-
-.list-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .footer-Item {
@@ -127,5 +128,69 @@ hr {
 
 .footer-Item , .footer-Item {
     margin-left: 16px;
+}
+
+.contact-text {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: var(--black);
+}
+
+.contact {
+    background-color: var(--skyblue);
+    padding: 30px;
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
+.contact-label {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--black);
+}
+
+.contact-field {
+    display: block;
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    padding-left: 10px;
+    border: none;
+}
+
+.contact-field:focus {
+    background-color: var(--Gray);
+    outline: none;
+}
+
+textarea.contact-field {
+    height: 150px;
+    padding: 10px;
+    font-family: "Roboto", calibri;
+}
+
+.button-form {
+    background-color: var(--black);
+    color: var(--width);
+    border: 2px solid var(--black);
+    border-radius: 10px;
+    padding: 2px 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button-form:hover {
+    background-color: var(--width);
+    color: var(--black);
+}
+
+.contact-maps {
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 20px;
 }
 
