@@ -1,6 +1,6 @@
 /*Importa forte do google fonts*/
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
 
 /*Reset em todos os elementos*/
 
@@ -55,7 +55,7 @@ li {
 
 .nav-item {
     text-transform: uppercase; /*deixar todas */
-    color: black;
+    color: var(--blue);
 }
 
 hr {
@@ -68,7 +68,7 @@ hr {
 }
 
 .nav-item:hover {
-    color: deepskyblue;
+    color: var(--black);
     transition: 0.2s;
 
 }
@@ -134,7 +134,7 @@ hr {
     text-align: center;
     margin-bottom: 30px;
     font-size: 28px;
-    color: var(--black);
+    color: var(--Gray);
 }
 
 .contact {
@@ -192,5 +192,40 @@ textarea.contact-field {
     margin-right: auto;
     margin-left: auto;
     padding-bottom: 20px;
+}
+
+/*index*/
+
+.title-header {
+    font-family: "madimi one", cursive;
+    color: var(--blue);
+    font-size: 38px;
+    padding-bottom: 10px;
+}
+
+.title-large {
+    font-family: "rock salt", cursive;
+    font-size: 38px;
+    color: var(--blue);
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+    color: var(--Gray);
+    padding-bottom: 10px;
+}
+
+.emphasis {
+    background-color: var(--skyblue);
+    color: var(--blue);
+    border-radius: 25px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
 }
 
