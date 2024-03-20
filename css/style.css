@@ -108,7 +108,7 @@ hr {
     padding: 15px 0;
 }
 
-.footer-container {
+.main-footer-container {
     display: flex; /*deixar todo na mesma linha*/
     align-items: center; /*alinha dodos os elementos*/
     justify-content: space-between; /*colar nome de um lado e lista de icones do outro*/
@@ -118,6 +118,12 @@ hr {
     font-family: "Raleway, sans-serif";
     color: var(--blue);
     font-size: 26px;
+}
+
+.list-container {
+    display: flex; /*deixar todo na mesma linha*/
+    align-items: center; /*alinha dodos os elementos*/
+    justify-content: space-between; /*colar nome de um lado e lista de icones do outro*/
 }
 
 .footer-Item {
@@ -289,7 +295,7 @@ textarea.contact-field {
 
 .second-col,
 .third-col {
-    width: 25%; /*faz com que a segunda e a terceira coluna ocupem o mesmo tamanho*/
+    width: 30%; /*faz com que a segunda e a terceira coluna ocupem o mesmo tamanho*/
 }
 
 .cart-product {
@@ -328,7 +334,7 @@ textarea.contact-field {
     color: var(--width);
     border: 0;
     border-radius: 5px;
-    padding: 4px;
+    padding: 4px 2px;
     margin-left: 5px;
 }
 
@@ -361,3 +367,33 @@ textarea.contact-field {
 .purchase-button:hover {
     filter: brightness(0,8);
 }
+
+/*Responsividade*/
+
+@media (max-width:725px) {
+    .maim-footer-container {
+        flex-direction: column;
+    }
+
+    .header-list-container {
+        font-size: 15px;
+    }
+
+    .title-header {
+       font-size: 30px;
+    }
+
+    .title-large {
+       font-size: 30px; 
+    }
+
+    .description {
+        text-align: center;
+    }
+
+    .title-median {
+        font-size: 25px;
+    }
+
+}
+    
