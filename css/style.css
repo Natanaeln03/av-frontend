@@ -417,6 +417,10 @@ textarea.contact-field {
     .product-identification {
         flex-direction: column;
     }
+
+    .product-qnt-input {
+
+    }
 }
 
 /*560px*/
