@@ -70,8 +70,16 @@ hr {
 .nav-item:hover {
     color: var(--black);
     transition: 0.2s;
-
 }
+
+.logo-zoom {
+    transition: transform 0, 3s ease;
+}
+
+.logo-zoom:hover {
+    transform: scale(1.4);/*Aumenta o tamanho do logo em 20% */
+}
+
 
 .main-about {
     padding: 40px 0px 64px;
@@ -251,6 +259,11 @@ textarea.contact-field {
     width: 320px;
     height: 220px;
     margin-bottom: 20px;
+}
+
+.product-box {
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px 5px black;
 }
 
 .product-price-container {
