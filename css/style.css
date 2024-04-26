@@ -50,7 +50,7 @@ li {
     display: flex; /*colocar os elementos na mesma linha*/
     justify-content: space-between; /*adiciona espaçamento entre os itens*/
     align-items: center; /*garatir que fiquem alinhados na mesma linha*/
-    padding: 16px 0; /*primeiro é cima e baixo, segundo esquerda e direita*/
+    padding: 55px 0; /*primeiro é cima e baixo, segundo esquerda e direita*/
 }
 
 .nav-item {
@@ -59,7 +59,7 @@ li {
 }
 
 hr {
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .nav-item a {
@@ -80,6 +80,33 @@ hr {
     transform: scale(1.4);/*Aumenta o tamanho do logo em 20% */
 }
 
+.sub-items {
+    display: none;
+    position: fixed;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-item:hover .sub-items {
+    display: block;
+}
+
+.sub-items li {
+    margin-bottom: 5px;
+}
+
+.sub-items a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.sub-items a:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 0px 3px;
+    color: var(--blue);
+}
 
 .main-about {
     padding: 40px 0px 64px;
