@@ -70,6 +70,7 @@ hr {
 .nav-item:hover {
     color: var(--black);
     transition: 0.2s;
+    transform: scale(1.1);
 }
 
 .logo-zoom {
@@ -458,9 +459,6 @@ textarea.contact-field {
         flex-direction: column;
     }
 
-    .product-qnt-input {
-
-    }
 }
 
 /*560px*/
