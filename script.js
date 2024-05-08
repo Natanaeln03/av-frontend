@@ -17,7 +17,7 @@ boxes.forEach(box => {
     img.style.transform = "scale(3)"
    })
 
-   box.addEventListener("mauseleave", (e) => {
+   box.addEventListener("mouseleave", (e) => {
 
     img.style.transformorigin = "center"
     img.style.transform = "scale(1)"
